@@ -12,14 +12,14 @@
 <header><a class="brand" href="./">cortex</a><nav><a href="privacidade.html">Privacidade</a><a href="termos.html">Termos de uso</a></nav></header>
 
 <h1>Política de privacidade</h1>
-<p class="updated">Versão 2026-10-03 · em vigor desde 3 de outubro de 2026</p>
+<p class="updated">Versão 2026-10-04 · em vigor desde 4 de outubro de 2026</p>
 
 <div class="summary">
 <strong>Em resumo</strong>
 <ul>
 <li>O Cortex funciona no seu aparelho. Turmas, alunos, notas, diário e planos ficam no celular, tablet ou computador, não nos nossos servidores.</li>
 <li>A conta é opcional. Com ela, guardamos o seu e-mail, o seu nome (se você entrar com Google) e o seu plano.</li>
-<li>Os backups na nuvem são criptografados no seu aparelho com uma senha que só você sabe. Nós não conseguimos abri-los.</li>
+<li>Os backups na nuvem são criptografados no seu aparelho antes de sair dele. Por padrão, a chave fica guardada na sua conta, para você restaurar em outro aparelho só entrando nela; se preferir, use uma senha de backup só sua, que nem nós conseguimos abrir.</li>
 <li>Quando você usa a IA, o texto do pedido vai para o provedor de IA (OpenAI ou Google) para gerar a resposta. Nós não guardamos esse texto, só contagens de uso e custo.</li>
 <li>Não vendemos dados e não usamos os seus dados para anúncios.</li>
 <li>Você pode excluir a conta a qualquer momento, no próprio app.</li>
@@ -50,7 +50,11 @@
 <p>Dados de pagamento (cartão, Pix, boleto) serão tratados diretamente pelo provedor de pagamento quando houver planos pagos; o Cortex não recebe o número do seu cartão.</p>
 
 <h2>4. Backups na nuvem</h2>
-<p>Quando você envia um backup, o app comprime e criptografa a cópia do banco de dados no seu aparelho (AES-256-GCM), com uma chave derivada de uma senha de backup que só você conhece. Guardamos o arquivo criptografado e, para mostrar a lista, a data, o tamanho, o nome do aparelho e a versão do app. Também guardamos um valor técnico que permite ao app avisar quando a senha de backup está errada, mas que não revela a senha. Sem a sua senha de backup, ninguém consegue ler o conteúdo, nem nós, nem a empresa que hospeda os servidores. Por isso, se você esquecer essa senha, os backups não podem ser recuperados.</p>
+<p>Quando você envia um backup, o app comprime e criptografa a cópia do banco de dados no seu aparelho (AES-256-GCM). Guardamos o arquivo criptografado e, para mostrar a lista, a data, o tamanho, o nome do aparelho e a versão do app. A chave da criptografia pode vir de dois jeitos, à sua escolha em Configurações › Backup:</p>
+<ul>
+<li><strong>Chave automática (padrão).</strong> O app cria uma chave aleatória e a guarda na sua conta, protegida pelas regras de acesso do banco de dados e pela verificação em duas etapas, se você a ativar. Assim não há senha para lembrar, e basta entrar na conta para restaurar os backups em outro aparelho. Como a chave fica nos nossos servidores, quem administra o banco de dados poderia, em tese, abrir os backups. Nós não fazemos isso, e o acesso administrativo é restrito.</li>
+<li><strong>Senha de backup só sua.</strong> A chave vem de uma senha que só você conhece. Guardamos apenas um valor técnico que permite ao app avisar quando a senha está errada, sem revelá-la. Sem essa senha, ninguém consegue ler o conteúdo, nem nós, nem a empresa que hospeda os servidores. Por isso, se você esquecer a senha, os backups não podem ser recuperados.</li>
+</ul>
 <p>Base legal: execução de contrato (art. 7º, V). Guardamos os backups mais recentes até o limite do seu plano; os mais antigos são apagados automaticamente.</p>
 
 <h2>5. Inteligência artificial</h2>
@@ -82,7 +86,7 @@
 </ul>
 
 <h2>8. Segurança</h2>
-<p>Toda comunicação com os nossos servidores é criptografada (HTTPS). Cada conta só acessa os próprios dados, por regras aplicadas no banco de dados. Os backups são criptografados no aparelho, e você pode ativar a verificação em duas etapas. Nenhum sistema é totalmente invulnerável. Se ocorrer um incidente de segurança que possa causar risco ou dano relevante, avisaremos você e a Autoridade Nacional de Proteção de Dados (ANPD), como manda a LGPD.</p>
+<p>Toda comunicação com os nossos servidores é criptografada (HTTPS). Cada conta só acessa os próprios dados, por regras aplicadas no banco de dados. Os backups são criptografados no aparelho, e você pode ativar a verificação em duas etapas, que também protege a chave automática dos backups. Nenhum sistema é totalmente invulnerável. Se ocorrer um incidente de segurança que possa causar risco ou dano relevante, avisaremos você e a Autoridade Nacional de Proteção de Dados (ANPD), como manda a LGPD.</p>
 
 <h2>9. Os seus direitos</h2>
 <p>Pela LGPD (art. 18), você pode, a qualquer momento:</p>
